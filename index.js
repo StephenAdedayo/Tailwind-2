@@ -1,5 +1,7 @@
-const menu = document.querySelector('#menu'); 
+const menu = document.querySelector('#menu');
 const steve = document.querySelector('#steve');
+const moon = document.querySelector("#moon")
+const body = document.querySelector("body")
 const hlinks = document.querySelectorAll("#hlink")
 
 menu.addEventListener("click", () => {
@@ -14,5 +16,9 @@ hlinks.forEach(link => {
       }) 
 
 })
+
+moon.addEventListener("click", () => {
+    body.classList.toggle("dark")
+  })
 
 
